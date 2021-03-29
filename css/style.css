@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.insert-container{
+    padding: 2em;
+    background-color: chocolate;
+    width: 60vw;
+    margin: 10% auto;
+    height: 100%;
+    border: 4px outset coral;
+    box-shadow: 0em .6em .5em 0 black;
+}
+.insert-container__h2{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+    border-bottom: 3px solid wheat;
+}
+.insert-container__label{
+    display: block;
+    font-size: 1.5em;
+    margin-bottom: .5em;
+}
+.insert-container__input{
+    display: block;
+    margin-left: 2em;
+    margin-bottom: 2em;
+    width: 85%;
+    height: 3em;
+    padding: 1em;
+    font-size: 1em;
+    border: 3px solid olivedrab;
+    border-radius: 5px;
+    background-color: wheat;
+}
+.insert-container__textarea{
+    display: block;
+    margin-bottom: 2em;  
+    width: 100%;
+    padding: 1em;
+    border: 3px solid olivedrab;
+    background-color: wheat;
+}
+.insert-container__input:focus, .insert-container__textarea:focus{
+    outline: none;
+    border: 3px solid wheat ;
+    background-color:  olivedrab ;  
+}
+.insert-container__input--submit{
+    font-size: 1.5em;
+    width: 100%;
+    height: 2em;
+    border: 3px solid wheat ;
+    background-color:  olivedrab ;
+}
+.insert-container__input--submit:hover{
+    border: 3px solid olivedrab ;
+    background-color: wheat   ;
+}
+
+
+.breads-container{
+    width: 90%;
+    background-color: black;
+    margin: 0% auto;
+}
+.breads-container__thead-th{
+    padding: 1em;
+    border: 5px solid orange;   
+    background-color: olivedrab;
+}
+.breads-container__tr-td{
+    padding: 1em;
+    border: 5px solid olivedrab ;
+    text-align: center; 
+    background-color: orange ;
+}
+.purchase{
+    width: 90%;
+    margin: 10% auto;
+    box-sizing: border-box;
+}
+.purchase-container{
+    width: 49%;
+    display: inline-block;
+}
+.show-information-container{
+    width: 49%;
+    display: inline-block;
+}
+
+
