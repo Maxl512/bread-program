@@ -50,15 +50,17 @@ const addBread =()=>{
 
     let option = document.createElement("OPTION");
     option.appendChild(document.createTextNode(name));
-    option.setAttribute("value", index)
+    option.setAttribute("value", index);
+    option.setAttribute("id", `${"option" + index}`);
 
     select.appendChild(option);
 };
 
 const buyBread =() =>{  
-    let bread = document.querySelector("#searching");
-    bread = bread.value;
+    let breadSelection = document.querySelector("#searching");
+    let bread = breadSelection.value;
     parseInt(bread);
+    let option = document.querySelector(`#${"option" + bread}`);
 
     let quantity = breads[bread][0];
     let name = breads[bread][1];
@@ -70,7 +72,7 @@ const buyBread =() =>{
     if(quantityChose <= quantity){
         let rest = quantity - quantityChose;
         breads[bread].splice(0, quantity, rest, name, price, description);
-        alert(`Comprando ${quantity} ${name}...`);
+        alert(`Comprando ${quantityChose} ${name}...`);
         let body = document.getElementById("body");
         body.style.cursor = "progress";
         let time = console.time();
@@ -99,7 +101,8 @@ const buyBread =() =>{
                 body.style.cursor = "default";
                 alert(`Compra de ${quantity} ${name} hecha con exito!`);
             };
-            breads[bread].splice(0, quantity);         
+            breads[bread].splice(0, quantity);       
+            breadSelection.removeChild(option);       
         } else{
             alert("Ok esta bien");
         };
