@@ -6,8 +6,8 @@
 .insert-container{
     padding: 2em;
     background-color: chocolate;
-    width: 60vw;
-    margin: 10% auto;
+    width: 100%;
+    margin-bottom: 10%;
     height: 100%;
     border: 4px outset coral;
     box-shadow: 0em .6em .5em 0 black;
@@ -25,9 +25,8 @@
 }
 .insert-container__input{
     display: block;
-    margin-left: 2em;
     margin-bottom: 2em;
-    width: 85%;
+    width: 100%;
     height: 3em;
     padding: 1em;
     font-size: 1em;
@@ -62,9 +61,9 @@
 
 
 .breads-container{
-    width: 90%;
+    width: 100%;
     background-color: black;
-    margin: 0% auto;
+    margin-bottom: 10%;
 }
 .breads-container__h2{
     font-size: 2em;
@@ -83,17 +82,17 @@
     background-color: orange ;
 }
 .purchase-container{
-    width: 80%;
+    width: 100vw;
     display: block;
     padding: 2em;
-    margin: 10% auto;
+    margin-bottom: 10%;
     background-color: chocolate;
     height: 100%;
     border: 4px outset coral;
     box-shadow: 0em .6em .5em 0 black;
 }
 .show-information-container{
-    width: 80%;
+    width: 100vw;
     display: none;
     padding: 2em;
     margin: 10% auto;
@@ -115,8 +114,7 @@
 }
 .purchase-container__input{
     display: block;
-    margin-left: 2em;
-    width: 85%;
+    width: 100%;
     height: 3em;
     padding: 1em;
     font-size: 1em;
@@ -140,11 +138,6 @@
     border: 3px solid olivedrab ;
     background-color: wheat   ;
 }
-.search-container{
-    position: relative;
-    margin: none;
-    z-index: 1;
-}
 .purchase-container__select{
     display: block;
     margin-left: 2em;
@@ -156,10 +149,6 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     background-color: wheat;
-}
-.bread:hover{
-    border: 3px solid wheat;
-    background-color: olivedrab;
 }
 .show-information-container__h2{
     font-size: 2em;
